@@ -1,0 +1,114 @@
+// Navbar wrapper
+.navbar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #fff;
+  transition: all 0.2s ease;
+
+  &:not(.navbar-wrapper--transparent) + * {
+    margin-top: 80px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    .navbar {
+      background-color: inherit;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &--transparent {
+      background-color: transparent;
+    }
+  }
+}
+
+// Is scroll
+.navbar-sticky .navbar-wrapper {
+  background-color: #fff !important;
+  box-shadow: 0 3px 3px rgb(23 43 77 / 8%);
+}
+
+// Navbar
+.navbar {
+  & > .container {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+
+  &__menu-link--active {
+    color: $dark;
+    font-weight: 700;
+  }
+
+  @include media-breakpoint-down(lg) {
+    &__logo {
+      max-width: 170px;
+    }
+
+    &__menu {
+      position: absolute;
+      padding: 30px 30px 50px;
+      width: 100%;
+      top: 80px;
+      left: 0;
+      transform: translateY(calc(-100% - 80px));
+      transition: transform 0.2s ease;
+      background-color: #fff;
+      z-index: -1;
+      text-align: center;
+      box-shadow: 0 3px 3px rgb(23 43 77 / 8%);
+    }
+
+    &__menu-item:not(:last-child) {
+      margin-bottom: 26px;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__menu {
+      display: flex;
+    }
+
+    &__menu-item:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+}
+
+// Is active
+.navbar-active .navbar__menu {
+  transform: translateY(0%);
+}
+
+// Navbar burger
+.burger {
+  position: relative;
+  height: 21px;
+  width: 30px;
+
+  span {
+    display: block;
+    height: 3px;
+    background-color: $primary;
+    width: 30px;
+    position: absolute;
+    left: 0;
+    border-radius: 20px;
+  }
+
+  span:nth-child(1) {
+    top: 0;
+  }
+
+  span:nth-child(2) {
+    top: 9px;
+  }
+
+  span:nth-child(3) {
+    bottom: 0;
+  }
+}

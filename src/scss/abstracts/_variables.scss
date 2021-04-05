@@ -1,0 +1,34 @@
+// COLORS
+$primary: #20cdc1;
+$primary-light: #84d8cf;
+$danger: #f37b7b;
+$danger-light: #f3a3a3;
+$dark: #555555;
+$light: #777777;
+$grey: #f4f4f4;
+
+// CONTAINER
+$container-padding-x: 26px;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1232px,
+);
+
+// SPACING
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  // -------------
+  5px: 5px,
+  10px: 10px,
+  12px: 12px,
+  40px: 40px,
+);
