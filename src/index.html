@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Wedding Loan</title>
   </head>
   <body>
     <!-- NAVBAR -->
@@ -16,7 +16,7 @@
           </a>
 
           <div class="ms-auto d-flex align-items-center">
-            <ul class="navbar__menu me-lg-40px">
+            <ul class="navbar__menu flex-shrink-0 me-lg-40px">
               <li class="navbar__menu-item">
                 <a href="#" class="navbar__menu-link navbar__menu-link--active">Home</a>
               </li>
@@ -28,7 +28,7 @@
               </li>
             </ul>
 
-            <a href="#" class="button">Button</a>
+            <a href="#" class="button button--sm button--danger">Get Quote</a>
 
             <div class="burger d-lg-none ms-12px">
               <span></span>
@@ -40,6 +40,521 @@
       </nav>
     </div>
     <!-- NAVBAR END -->
-    <header class="home-header"></header>
+
+    <!-- HEADER -->
+    <header class="home-header text-white">
+      <h1 class="heading-primary font-tertiary">Wedding Loans</h1>
+      <p class="text-lg px-30px mt-5px">Financing your dream wedding has never been easier.</p>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- CALC SECTION -->
+    <section class="calc-section">
+      <div class="container">
+        <div class="row g-20px">
+          <div class="col-lg-6">
+            <div class="calc">
+              <div class="calc__body">
+                <div class="text-center">
+                  <h2 class="calc__heading">Loan Calculator</h2>
+                </div>
+
+                <div class="mt-35px">
+                  <div class="calc__field">
+                    <div class="calc__field-header">
+                      <p class="calc__field-label">Loan Amount</p>
+                      <p class="calc__field-value">$<span class="amount-show">12,000</span></p>
+                    </div>
+
+                    <div class="calc__field-range">
+                      <button class="calc__field-button calc__field-button--minus me-10px" data-num="500">
+                        <img src="images/svg/icon-calc-down.svg" alt="" />
+                      </button>
+                      <input min="1000" max="100000" id="loan-amount" type="range" value="12000" step="500" />
+                      <button class="calc__field-button calc__field-button--plus ms-10px" data-num="500">
+                        <img src="images/svg/icon-calc-up.svg" alt="" />
+                      </button>
+                    </div>
+
+                    <div class="calc__field-bottom">
+                      <span>$1,000</span>
+                      <span>$100,000</span>
+                    </div>
+                  </div>
+
+                  <div class="calc__field mt-25px">
+                    <div class="calc__field-header">
+                      <p class="calc__field-label">Tenure</p>
+                      <p class="calc__field-value"><span class="tenure-show">45</span> months</p>
+                    </div>
+
+                    <div class="calc__field-range">
+                      <button class="calc__field-button calc__field-button--minus me-10px" data-num="3">
+                        <img src="images/svg/icon-calc-down.svg" alt="" />
+                      </button>
+                      <input min="3" max="72" id="loan-tenure" type="range" value="45" />
+                      <button class="calc__field-button calc__field-button--plus ms-10px" data-num="3">
+                        <img src="images/svg/icon-calc-up.svg" alt="" />
+                      </button>
+                    </div>
+
+                    <div class="calc__field-bottom">
+                      <span>3 months</span>
+                      <span>72 months</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="calc__output mt-25px">
+                  <p class="fw-bold lh-sm">
+                    Your monthly <br />
+                    payment
+                  </p>
+                  <p id="month-output">$320</p>
+                </div>
+
+                <p class="text-xs lh-sm mt-10px text-light">
+                  *Calculation is based on an APR of 12% on reducing interest rate. Minimum repayment period is 3 months
+                  to a maximum of 36 months.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <form class="form text-center h-100">
+              <p>Happy with the numbers? <strong class="d-block d-md-inline">Get your quote now!</strong></p>
+              <div class="mt-4 text-start">
+                <div class="form__group">
+                  <div class="form__field">
+                    <input type="text" placeholder="Your name" />
+                  </div>
+
+                  <div class="form__field">
+                    <input type="text" placeholder="Your mobile number" />
+                  </div>
+                </div>
+
+                <div class="form__group mt-10px">
+                  <div class="form__field">
+                    <input type="text" placeholder="Desired loan amount" />
+                  </div>
+
+                  <div class="form__field">
+                    <input type="text" placeholder="Preferred Location" />
+                  </div>
+                </div>
+
+                <div class="form__field mt-10px">
+                  <textarea placeholder="Remarks"></textarea>
+                </div>
+              </div>
+              <button class="button button--danger mt-20px" type="submit">Get My Quote</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CALC SECTION END -->
+
+    <!-- SECTION REVIEWS -->
+    <section class="section bg-dots top-flower text-center">
+      <div class="overflow-hidden px-20px">
+        <div class="container">
+          <h2 class="heading-secondary">Real stories from over <span class="text-primary">12,000</span> couples</h2>
+          <p class="mt-10px text-light">We help happy couples to held their wedding, you can be one of them too!</p>
+
+          <div class="review-card-wrapper mt-35px">
+            <!-- Slider main container -->
+            <div class="swiper-container reviews-swiper pb-80px">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slide -->
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <div class="d-inline-flex align-items-center">
+                      <img class="flex-shrink-0" src="images/review-avatar.png" alt="" />
+                      <div class="text-start ms-10px">
+                        <p class="fw-bold">Low Jing Jing</p>
+                        <p>Jan 2021</p>
+                      </div>
+                    </div>
+
+                    <div class="review-card__stars mt-20px">
+                      <img src="images/svg/star.svg" alt="" />
+                      <img src="images/svg/star.svg" alt="" />
+                      <img src="images/svg/star.svg" alt="" />
+                      <img src="images/svg/star.svg" alt="" />
+                      <img src="images/svg/star-disabled.svg" alt="" />
+                    </div>
+
+                    <h4 class="text-lg fw-bold mt-20px">Incredible Experience</h4>
+                    <p class="mt-15px">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                      the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                      type and scrambled it to make a type specimen book.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Slide -->
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <div class="d-inline-flex align-items-center">
+                      <img class="flex-shrink-0" src="images/review-avatar.png" alt="" />
+                      <div class="text-start ms-10px">
+                        <p class="fw-bold">Low Jing Jing</p>
+                        <p>Jan 2021</p>
+                      </div>
+                    </div>
+
+                    <div class="review-card__stars mt-20px">
+                      <img src="images/svg/star.svg" alt="" />
+                      <img src="images/svg/star.svg" alt="" />
+                      <img src="images/svg/star.svg" alt="" />
+                      <img src="images/svg/star.svg" alt="" />
+                      <img src="images/svg/star-disabled.svg" alt="" />
+                    </div>
+
+                    <h4 class="text-lg fw-bold mt-20px">Incredible Experience</h4>
+                    <p class="mt-15px">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                      the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                      type and scrambled it to make a type specimen book.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Slide -->
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <div class="d-inline-flex align-items-center">
+                      <img class="flex-shrink-0" src="images/review-avatar.png" alt="" />
+                      <div class="text-start ms-10px">
+                        <p class="fw-bold">Low Jing Jing</p>
+                        <p>Jan 2021</p>
+                      </div>
+                    </div>
+
+                    <div class="review-card__stars mt-20px">
+                      <img src="images/svg/star.svg" alt="" />
+                      <img src="images/svg/star.svg" alt="" />
+                      <img src="images/svg/star.svg" alt="" />
+                      <img src="images/svg/star.svg" alt="" />
+                      <img src="images/svg/star-disabled.svg" alt="" />
+                    </div>
+
+                    <h4 class="text-lg fw-bold mt-20px">Incredible Experience</h4>
+                    <p class="mt-15px">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                      the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                      type and scrambled it to make a type specimen book.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION REVIEWS END -->
+
+    <!-- SECTION STEPS -->
+    <section class="section top-flower text-center px-20px px-md-0">
+      <div class="container">
+        <h2 class="heading-secondary"><span class="text-primary">Steps</span> to get your wedding fund</h2>
+        <p class="mt-10px text-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+        <div class="mt-74px">
+          <div class="row steps-row gy-54px gy-lg-18px">
+            <div class="col-lg-8 col-xl-6 offset-lg-2 offset-xl-5">
+              <div class="d-md-flex align-items-center">
+                <img class="flex-shrink-0 mb-20px me-md-20px mb-md-0" src="images/svg/step-1.svg" alt="" />
+                <div class="text-start">
+                  <h4 class="text-lg fw-bold">Get personalized quote for FREE</h4>
+                  <p class="text-light mt-12px">
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-8 col-xl-6 offset-lg-2 offset-xl-1">
+              <div class="d-md-flex align-items-center">
+                <img class="flex-shrink-0 mb-20px ms-md-20px mb-md-0 order-md-2" src="images/svg/step-2.svg" alt="" />
+                <div class="text-start text-md-end order-md-1">
+                  <h4 class="text-lg fw-bold">Get request processed in minutes</h4>
+                  <p class="text-light mt-12px">
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-8 col-xl-6 offset-lg-2 offset-xl-5">
+              <div class="d-md-flex align-items-center">
+                <img class="flex-shrink-0 mb-20px me-md-20px mb-md-0" src="images/svg/step-3.svg" alt="" />
+                <div class="text-start">
+                  <h4 class="text-lg fw-bold">Wait for matching up with right lender</h4>
+                  <p class="text-light mt-12px">
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-8 col-xl-6 offset-lg-2 offset-xl-1">
+              <div class="d-md-flex align-items-center">
+                <img class="flex-shrink-0 mb-20px ms-md-20px mb-md-0 order-md-2" src="images/svg/step-4.svg" alt="" />
+                <div class="text-start text-md-end order-md-1">
+                  <h4 class="text-lg fw-bold">Sign agreement and get money</h4>
+                  <p class="text-light mt-12px">
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION STEPS END -->
+
+    <!-- SECTION WHO -->
+    <section class="section top-flower bg-grey px-20px px-md-0">
+      <div class="container">
+        <div class="row gy-15px">
+          <div class="col-md-6">
+            <h2 class="heading-secondary mt-md-20px">Who we are</h2>
+            <p class="mt-10px text-light">
+              We work with the top licensed money lenders in Singapore and constantly seek for the best deals to our
+              client. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+              the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.
+            </p>
+            <a href="#" class="button button--primary d-none d-md-inline-flex mt-44px">More about us</a>
+          </div>
+
+          <div class="col-md-6">
+            <div class="section-who__img">
+              <img src="images/who.png" alt="" />
+
+              <div class="text-center mt-30px d-md-none">
+                <a href="#" class="button button--primary">More about us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION WHO END -->
+
+    <!-- SECTION FAQ -->
+    <section class="section top-flower text-center">
+      <div class="container">
+        <h2 class="heading-secondary">Frequently asked <span class="text-primary">questions</span></h2>
+        <p class="mt-10px text-light">Want to know more about getting a wedding loan in Singapore? Start here.</p>
+
+        <div class="mt-74px">
+          <div class="faq-accordion mb-25px">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="question">What is a wedding loan?</div>
+              </div>
+
+              <div class="col-md-10 offset-md-2">
+                <div class="answer">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                  into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                  release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                  software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-accordion mb-25px">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="question">How does a personal loan work?</div>
+              </div>
+
+              <div class="col-md-10 offset-md-2">
+                <div class="answer">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                  into electronic typesetting, remaining essentially unchanged.
+                  <br /><br />
+                  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                  and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                  Ipsum.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-accordion mb-25px">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="question">Who is eligible for a personal loan?</div>
+              </div>
+
+              <div class="col-md-10 offset-md-2">
+                <div class="answer">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                  into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                  release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                  software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-accordion mb-25px">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="question">Where can I apply for a personal loan?</div>
+              </div>
+
+              <div class="col-md-10 offset-md-2">
+                <div class="answer">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                  into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                  release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                  software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-accordion">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="question">Top 10 benefits of applying for a personal loan</div>
+              </div>
+
+              <div class="col-md-10 offset-md-2">
+                <div class="answer">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                  into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                  release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                  software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="button button--primary d-none d-md-inline-flex mt-65px">View All</a>
+      </div>
+    </section>
+    <!-- SECTION FAQ END -->
+
+    <!-- SECTION BLOG -->
+    <section class="section bg-dots top-flower text-center">
+      <div class="container">
+        <h2 class="heading-secondary">Trending Topics</h2>
+        <p class="mt-10px text-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+        <div class="mt-74px">
+          <div class="row g-25px gx-lg-50px gy-lg-44px">
+            <div class="col-md-6 col-lg-4">
+              <a href="#" class="blog-card">
+                <div class="blog-card__img">
+                  <img src="images/blog-1.png" alt="" />
+                  <div class="blog-card__overlay">
+                    6 important things to know and prepare for marriage registration in Singapore
+                  </div>
+                </div>
+                <p class="fw-bold mt-10px">
+                  6 important things to know and prepare for marriage registration in Singapore
+                </p>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <a href="#" class="blog-card">
+                <div class="blog-card__img">
+                  <img src="images/blog-2.png" alt="" />
+                  <div class="blog-card__overlay">
+                    10 popular wedding photographers with exclusive photoshoot packages
+                  </div>
+                </div>
+                <p class="fw-bold mt-10px">10 popular wedding photographers with exclusive photoshoot packages</p>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <a href="#" class="blog-card">
+                <div class="blog-card__img">
+                  <img src="images/blog-3.png" alt="" />
+                  <div class="blog-card__overlay">Top 10 locations for outdoor wedding</div>
+                </div>
+                <p class="fw-bold mt-10px">Top 10 locations for outdoor wedding</p>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <a href="#" class="blog-card">
+                <div class="blog-card__img">
+                  <img src="images/blog-4.png" alt="" />
+                  <div class="blog-card__overlay">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry and has been standard
+                    dummy text ever since the 1500s
+                  </div>
+                </div>
+                <p class="fw-bold mt-10px">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry and has been standard dummy
+                  text ever since the 1500s
+                </p>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <a href="#" class="blog-card">
+                <div class="blog-card__img">
+                  <img src="images/blog-5.png" alt="" />
+                  <div class="blog-card__overlay">Lorem Ipsum is simply dummy text</div>
+                </div>
+                <p class="fw-bold mt-10px">Lorem Ipsum is simply dummy text</p>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <a href="#" class="blog-card">
+                <div class="blog-card__img">
+                  <img src="images/blog-6.png" alt="" />
+                  <div class="blog-card__overlay">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry and has been standard
+                    dummy text ever since the 1500s
+                  </div>
+                </div>
+                <p class="fw-bold mt-10px">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry and has been standard dummy
+                  text ever since the 1500s
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION BLOG END -->
   </body>
 </html>

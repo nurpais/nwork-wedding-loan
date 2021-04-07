@@ -1,0 +1,12 @@
+.calc-section {
+  background-color: $grey;
+  padding: 44px 0;
+
+  & > .container {
+    transform: translateY(-95px);
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 55px 0;
+  }
+}

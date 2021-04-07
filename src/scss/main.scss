@@ -1,9 +1,14 @@
 // ABSTRACT
 @import "abstracts/variables";
 @import "abstracts/mixins";
+@import "abstracts/classes";
 
 // BOOTSTRAP
 @import "bootstrap/scss/bootstrap-utilities.scss";
+
+// SWIPER
+@import "swiper/swiper.scss";
+@import "swiper/components/pagination/pagination.scss";
 
 @import "bootstrap/scss/containers";
 @import "bootstrap/scss/grid";
@@ -16,10 +21,17 @@
 
 // LAYOUTS
 @import "layouts/navbar";
+@import "layouts/section";
+@import "layouts/calc-section";
 @import "layouts/footer";
 
 // COMPONENTS
 @import "components/buttons";
+@import "components/calc";
+@import "components/form";
+@import "components/review-card";
+@import "components/blog-card";
+@import "components/faq-accordion";
 
 // PAGES
 @import "pages/home";

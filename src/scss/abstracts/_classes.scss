@@ -1,0 +1,59 @@
+.bg-dots {
+  background-image: url(../images/bg-dots.png);
+  background-position: center;
+}
+
+.top-flower {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 20px;
+    top: -10px;
+    background-image: url(../images/svg/flower.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.bottom-flower {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 20px;
+    bottom: -10px;
+    background-image: url(../images/svg/flower.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.mw-580px {
+  max-width: 580px;
+  display: inline-block;
+}
+
+.swiper-pagination {
+  bottom: 0;
+  line-height: 1;
+}
+
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 40px !important;
+  background-color: $disabled !important;
+  margin: 0 6px !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $primary !important;
+}

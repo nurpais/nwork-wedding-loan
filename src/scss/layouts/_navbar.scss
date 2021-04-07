@@ -89,6 +89,7 @@
   position: relative;
   height: 21px;
   width: 30px;
+  cursor: pointer;
 
   span {
     display: block;
@@ -98,6 +99,7 @@
     position: absolute;
     left: 0;
     border-radius: 20px;
+    transition: all 0.2s ease;
   }
 
   span:nth-child(1) {
@@ -110,5 +112,19 @@
 
   span:nth-child(3) {
     bottom: 0;
+  }
+}
+
+.navbar-active .burger {
+  span:nth-child(1) {
+    transform: rotate(45deg) translate(22%, 189%);
+  }
+
+  span:nth-child(2) {
+    opacity: 0;
+  }
+
+  span:nth-child(3) {
+    transform: rotate(-45deg) translate(23%, -209%);
   }
 }

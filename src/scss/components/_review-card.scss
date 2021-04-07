@@ -1,0 +1,52 @@
+.review-card-wrapper {
+  position: relative;
+  padding: 40px 0 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -66px;
+    width: 118px;
+    height: 100px;
+    background-image: url(../images/svg/quote-top.svg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -66px;
+    bottom: 40px;
+    width: 118px;
+    height: 100px;
+    background-image: url(../images/svg/quote-bottom.svg);
+  }
+
+  @include media-breakpoint-up(md) {
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+}
+
+.review-card {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 580px;
+
+  &__stars {
+    display: inline-flex;
+
+    & > *:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+}
+
+

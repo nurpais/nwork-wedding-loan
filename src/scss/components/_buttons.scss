@@ -1,0 +1,45 @@
+.button {
+  border: none;
+  background: #ffffff;
+  border-radius: 50px;
+  width: 100%;
+  max-width: 320px;
+  color: $dark;
+  font-weight: 700;
+  padding: 16px;
+  line-height: 18px;
+  text-align: center;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &--sm {
+    max-width: initial;
+    width: initial;
+    padding: 12px 20px;
+    @include media-breakpoint-down(lg) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  &--danger {
+    background-color: $danger;
+    color: #fff;
+
+    &:hover {
+      background-color: $danger-light;
+    }
+  }
+
+  &--primary {
+    background-color: $primary;
+    color: #fff;
+
+    &:hover {
+      background-color: $primary-light;
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.calc {
+  position: relative;
+  border-radius: 15px;
+  border: 2px solid $primary;
+  padding: 30px 20px;
+  background-color: #fff;
+
+  // Field header
+  &__field-header {
+    padding: 0 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__heading {
+    font-family: "Lemonde", serif;
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  &__field-label {
+    font-weight: bold;
+  }
+
+  &__field-value {
+    color: $primary;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+
+  // Field range
+  &__field-range {
+    display: flex;
+    align-items: center;
+
+    input {
+      height: 5px;
+      width: 100%;
+      outline: none;
+      appearance: none;
+      border: none;
+
+      &#loan-amount {
+        background: linear-gradient(to right, $primary 0%, $primary 12%, $disabled 12%, $disabled 100%);
+      }
+
+      &#loan-tenure {
+        background: linear-gradient(to right, $primary 0%, $primary 60%, $disabled 60%, $disabled 100%);
+      }
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      border-radius: 50px;
+      border: 5px solid $primary;
+      cursor: grab;
+      -webkit-appearance: none;
+    }
+
+    input[type="range"]::-moz-range-thumb {
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      border-radius: 50px;
+      border: 5px solid $primary;
+      cursor: grab;
+      -webkit-appearance: none;
+    }
+
+    input[type="range"]::-ms-thumb {
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      border-radius: 50px;
+      border: 5px solid $primary;
+      cursor: grab;
+      -webkit-appearance: none;
+    }
+  }
+
+  &__field-button {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+
+  // Field bottom
+  &__field-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: $light;
+    padding: 0 46px;
+    margin-top: -5px;
+  }
+
+  &__output {
+    background-color: $grey;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #month-output {
+    font-size: 38px;
+    line-height: 1.2;
+    color: $primary;
+    font-weight: bold;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 30px;
+
+    &__heading {
+      font-size: 38px;
+    }
+
+    &__output {
+      padding: 20px 46px;
+    }
+  }
+}

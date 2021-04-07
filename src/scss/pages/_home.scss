@@ -1,5 +1,34 @@
 .home-header {
-  height: 100vh;
+  height: 900px;
   width: 100%;
   background-image: url(../images/hero.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.steps-row {
+  @include media-breakpoint-up(xl) {
+    & > *:nth-child(even) {
+      transform: translateX(18px);
+    }
+  }
+
+  @include media-breakpoint-up(xxl) {
+    & > *:nth-child(even) {
+      transform: translateX(5px);
+    }
+  }
+}
+
+.section-who__img {
+  margin: 0 -46px;
+
+  @include media-breakpoint-up(md) {
+    margin: 0;
+  }
 }

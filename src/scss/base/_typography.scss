@@ -1,0 +1,39 @@
+.font-secondary {
+  font-family: "Lemonde", serif;
+}
+
+.font-tertiary {
+  font-family: "Great Vibes", serif;
+}
+
+.text-lg {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.text-xs {
+  font-size: 12px;
+}
+
+.lh-sm {
+  line-height: 1.2 !important;
+}
+
+.heading-primary {
+  font-size: 70px;
+  line-height: 1.2;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 120px;
+  }
+}
+
+.heading-secondary {
+  font-size: 36px;
+  line-height: 1.2;
+  font-family: "Lemonde", serif;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 48px;
+  }
+}
