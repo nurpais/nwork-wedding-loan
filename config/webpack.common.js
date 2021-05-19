@@ -27,10 +27,50 @@ module.exports = {
 
     // Generates an HTML file from a template
     new HtmlWebpackPlugin({
-      //   title: "webpack Boilerplate",
-      // favicon: paths.src + "/images/favicon.png",
       template: paths.src + "/index.html", // template file
       filename: "index.html", // output file
+      minify: false,
+      scriptLoading: "blocking",
+    }),
+
+    new HtmlWebpackPlugin({
+      template: paths.src + "/resources.html", // template file
+      filename: "resources.html", // output file
+      minify: false,
+      scriptLoading: "blocking",
+    }),
+
+    new HtmlWebpackPlugin({
+      template: paths.src + "/search-result.html", // template file
+      filename: "search-result.html", // output file
+      minify: false,
+      scriptLoading: "blocking",
+    }),
+
+    new HtmlWebpackPlugin({
+      template: paths.src + "/about.html", // template file
+      filename: "about.html", // output file
+      minify: false,
+      scriptLoading: "blocking",
+    }),
+
+    new HtmlWebpackPlugin({
+      template: paths.src + "/form.html", // template file
+      filename: "form.html", // output file
+      minify: false,
+      scriptLoading: "blocking",
+    }),
+
+    new HtmlWebpackPlugin({
+      template: paths.src + "/article.html", // template file
+      filename: "article.html", // output file
+      minify: false,
+      scriptLoading: "blocking",
+    }),
+
+    new HtmlWebpackPlugin({
+      template: paths.src + "/faq.html", // template file
+      filename: "faq.html", // output file
       minify: false,
       scriptLoading: "blocking",
     }),

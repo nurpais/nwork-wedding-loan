@@ -1,0 +1,10 @@
+.cta-section {
+  background-image: url(../images/cta.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 326px 0 50px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 320px 0 80px;
+  }
+}

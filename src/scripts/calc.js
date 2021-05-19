@@ -108,13 +108,13 @@ window.addEventListener("load", function () {
         (percentage(this.value, 72) - 4) +
         "%, #cfdada 100%)";
     });
+
+    document.querySelector("#loan-amount").addEventListener("input", function () {
+      fCalculate();
+    });
+
+    document.querySelector("#loan-tenure").addEventListener("input", function () {
+      fCalculate();
+    });
   }
-
-  document.querySelector("#loan-amount").addEventListener("input", function () {
-    fCalculate();
-  });
-
-  document.querySelector("#loan-tenure").addEventListener("input", function () {
-    fCalculate();
-  });
 });

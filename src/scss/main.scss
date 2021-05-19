@@ -23,6 +23,8 @@
 @import "layouts/navbar";
 @import "layouts/section";
 @import "layouts/calc-section";
+@import "layouts/cta-section";
+@import "layouts/benefits-section";
 @import "layouts/footer";
 
 // COMPONENTS
@@ -35,3 +37,6 @@
 
 // PAGES
 @import "pages/home";
+@import "pages/resources";
+@import "pages/article";
+@import "pages/about";

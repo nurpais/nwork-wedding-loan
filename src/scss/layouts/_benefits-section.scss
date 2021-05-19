@@ -1,0 +1,16 @@
+.benefits {
+  margin: -21px;
+
+  & > * {
+    margin: 21px;
+  }
+
+  @include media-breakpoint-up(md) {
+    display: grid;
+  }
+}
+
+.benefit {
+  max-width: 320px;
+  width: 100%;
+}

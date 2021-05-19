@@ -15,6 +15,10 @@
   align-items: center;
   justify-content: center;
 
+  &:hover {
+    background-color: $disabled;
+  }
+
   &--sm {
     max-width: initial;
     width: initial;
